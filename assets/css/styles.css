@@ -102,15 +102,16 @@ body {
 
 .hero .media-block {
     position: relative;
-    display: inline-block;
-    width: 470px;
-    height: 685px;
-    background: url(../img/img-hero.jpeg);
-    background-size: cover;
+    width: 40%;
+}
+
+.hero .media-block .hero-img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 20px;
 }
 
-.content-courses {
+.content-summary {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -118,7 +119,7 @@ body {
     padding: 24px 24px;
 }
 
-.hero .box-courses {
+.hero .hero-summary {
     width: 270px;
     height: 244px;
     position: absolute;
@@ -130,16 +131,16 @@ body {
 }
 
 
-.hero .course-item {
+.hero .item {
     display: flex;
     align-items: center;
 }
 
-.hero .course-item .course-info {
+.hero .item .info {
     margin-left: 16px;
 }
 
-.course-info .sub-title {
+.info .sub-title {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 1.4rem;
@@ -147,7 +148,7 @@ body {
     color: #5F5B53;
 }
 
-.course-info .course {
+.info .course {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.8rem;
@@ -156,8 +157,8 @@ body {
 }
 
 .hero .content-block {
-    width: 470px;
     margin-left: auto;
+    width: 40%;
 } 
 .hero .title {
     font-family: 'Sen';
@@ -189,6 +190,9 @@ body {
     display: flex;
     align-items: center;
     margin-left: 28px;
+    border: none;
+    background: #FFFCF4;
+    cursor: pointer;
 }
 
 .hero .circle-btn {
@@ -212,11 +216,10 @@ body {
     left: calc(50% - 3px);
 }
 
-.hero .play-video p {
+.hero .play-video .text-btn {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.8rem;
-    line-height: 1.67;
     color: #171100;
 }
 
@@ -243,13 +246,5 @@ body {
     font-size: 4.4rem;
     line-height: 1.23;
     color: #171100;
-    margin-right: 8px;
-}
-
-.hero .engagement .sub-title,.hero .engagement p {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #5F5B53;
+    margin-right: 4px;
 }
