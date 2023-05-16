@@ -258,7 +258,7 @@ body {
     max-width: 458px;
 }
 
-.popular .popular-content {
+.popular .row-popular {
     display: flex;
     align-items: center;
 }
@@ -283,4 +283,74 @@ body {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5F5B53;
+}
+
+/* ============ list item ============= */
+
+.popular .list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.popular .item {
+    flex: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.popular .thumb {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular .body {
+    padding: 16px 20px 20px;
+}
+
+.popular .star {
+    margin-left: auto;
+}
+
+.popular .title-item {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular .desc-item {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+    margin: 6px 0 12px;
+}
+
+.popular .btn {
+    margin-left: auto;
+    min-width: 118px;
+}
+
+.popular .btn.active {
+    background: #FFB900;
+}
+
+
+.popular .number-star {
+    position: relative;
+    top: -2px;
+    right: -1px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #FEA31B;
 }
