@@ -439,3 +439,23 @@ body {
     position: absolute;
     left: -30px;
     top: -26px;
+}
+
+/* ========= feature ============ */
+
+.feature {
+    padding: 200px 0;
+}
+
+.feature .feature-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .column-left {
+    width: 48.7%;
+}
+
+.feature .column-right {
+    width: 40%;
+}
