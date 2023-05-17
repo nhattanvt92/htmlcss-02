@@ -354,3 +354,88 @@ body {
     line-height: 1.75;
     color: #FEA31B;
 }
+
+/* ========== comment ============= */
+
+.comment {
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+
+.comment .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment .name {
+    margin-top: 18px;
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+}
+
+.comment .desc {
+    margin-top: 4px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB3;
+}
+
+.comment .icons {
+    margin-top: 28px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.comment .icon {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.comment .icon::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 12px;
+    top: -4px;
+}
+
+.comment .icon.active {
+    background: #FFB900;
+}
+
+.comment .row-cmt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment .wrap-msg {
+    width: 67%;
+    position: relative;
+}
+
+.comment .msg {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
+}
+
+.comment .icon-msg {
+    position: absolute;
+    left: -30px;
+    top: -26px;
