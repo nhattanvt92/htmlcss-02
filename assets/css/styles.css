@@ -388,14 +388,14 @@ body {
     color: #BFBCB3;
 }
 
-.comment .icons {
+.icons {
     margin-top: 28px;
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
-.comment .icon {
+.comment .icon-dot {
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -403,7 +403,8 @@ body {
     background: #634700;
 }
 
-.comment .icon::before {
+
+.comment .icon-dot::before {
     position: relative;
     content: "";
     display: inline-block;
@@ -412,7 +413,7 @@ body {
     top: -4px;
 }
 
-.comment .icon.active {
+.comment .icon-dot.active {
     background: #FFB900;
 }
 
@@ -574,11 +575,23 @@ body {
 }
 
 .blog .date {
+    display: inline-block;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #5F5B53;
+}
+
+.blog .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFB900;
+    margin-right: 5px;
+    transform: translateY(-2px);
 }
 
 .blog .info {
@@ -589,8 +602,37 @@ body {
     color: #171100;
 }
 
+.blog .line {
+    display: block;
+    content: "";
+    width: 160px;
+    height: 1px;
+    background: #E2DFDA;
+    border-radius: 0.5px;
+    margin: 12px 0;
+}
+
 .blog .btn-blog {
     min-width: 118px;
     font-size: 14px;
     margin-top: 12px;
+}
+
+.blog .icon-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.blog .icon-dot.active {
+    background: #FFB900;
+}
+
+.blog-slide {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 38px;
 }
