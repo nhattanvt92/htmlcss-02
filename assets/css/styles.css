@@ -27,6 +27,10 @@ body {
     border-radius: 24.5px;
 }
 
+.btn.active {
+    background: #FFB900;
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -339,10 +343,6 @@ body {
     min-width: 118px;
 }
 
-.popular .btn.active {
-    background: #FFB900;
-}
-
 
 .popular .number-star {
     position: relative;
@@ -515,4 +515,82 @@ body {
     background: #FFB900;
     border-radius: 26px;
     margin-top: 32px;
+}
+
+/* ========= blog =========== */
+
+.blog {
+    padding: 96px 0;
+    background: #FFFCF4;
+}
+
+.blog .header {
+    margin: 0 auto;
+    max-width: 448px;
+}
+
+.blog .sub-title {
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #130606;
+}
+
+.blog .desc {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    color: #696262;
+    margin-top: 16px;
+}
+
+.blog .list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.blog .item {
+    max-width: 31.6%;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.blog .img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog .content {
+    margin: 20px 20px 28px;
+}
+
+.blog .date {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+}
+
+.blog .info {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+
+.blog .btn-blog {
+    min-width: 118px;
+    font-size: 14px;
+    margin-top: 12px;
 }
