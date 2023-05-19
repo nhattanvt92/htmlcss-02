@@ -653,7 +653,25 @@ body {
 }
 
 .footer .column {
-    width: 25%;
+    display: inline-block;
+}
+
+.footer .logo {
+    padding: 6px 0;
+}
+
+.footer .social {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+}
+
+.footer .column:first-child {
+    max-width: 267px;
+}
+
+.footer .column:last-child {
+    max-width: 231px;
 }
 
 .footer .summary-content {
@@ -662,6 +680,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.86;
     color: #BFBCB2;
+    margin-top: 18px;
 }
 
 .footer .heading {
@@ -685,6 +704,17 @@ body {
     color: #BFBCB2;
 }
 
+.footer .list .item ~ .item {
+    margin-top: 12px;
+}
+
+.footer .list strong {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
 .footer .copyright {
     font-family: 'Poppins';
     font-style: normal;
@@ -693,5 +723,4 @@ body {
     line-height: 26px;
     text-align: center;
     color: #807D74;
-
 }
