@@ -3,6 +3,11 @@
     text-decoration: none;
 }
 
+:root {
+    --primary: #FFB900;
+    --font-heading: 'Sen', sans-serif;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -19,7 +24,6 @@ body {
     min-width: 144px;
     text-align: center;
     padding: 17px 15px;
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.6rem;
     color: #FFFFFF;
@@ -28,7 +32,7 @@ body {
 }
 
 .btn.active {
-    background: #FFB900;
+    background: var(--primary);
 }
 
 .main-content {
@@ -65,7 +69,6 @@ body {
 
 .navbar ul a {
     position: relative;
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -74,7 +77,6 @@ body {
 
 .navbar ul li a:hover,
 .navbar ul li.active a {
-    font-family: 'Poppins';
     font-size: 1.6rem;
     color: #171100;
 }
@@ -144,15 +146,12 @@ body {
 }
 
 .info .sub-title {
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #5F5B53;
 }
 
 .info .course {
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -164,7 +163,7 @@ body {
     width: 40%;
 } 
 .hero .title {
-    font-family: 'Sen';
+    font-family: var(--font-heading);
     font-style: normal;
     font-weight: 700;
     font-size: 5.8rem;
@@ -174,9 +173,6 @@ body {
 } 
 
 .hero .desc {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5F5B53;
@@ -212,7 +208,7 @@ body {
     position: absolute;
     display: inline-block;
     content: "";
-    border-color: transparent transparent transparent #FFB900;
+    border-color: transparent transparent transparent var(--primary);
     border-width: 8px 10px;
     border-style: solid;
     top: calc(50% - 8px);
@@ -220,14 +216,13 @@ body {
 }
 
 .hero .play-video .text-btn {
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.8rem;
     color: #171100;
 }
 
 .btn-hero {
-    background: #FFB900;
+    background: var(--primary);
     min-width: 180px;
     padding: 24px 15px;
     border-radius: 32px;
@@ -243,7 +238,7 @@ body {
 }
 
 .hero .engagement strong {
-    font-family: 'Sen';
+    font-family: var(--font-heading);
     font-style: normal;
     font-weight: 700;
     font-size: 4.4rem;
@@ -272,7 +267,7 @@ body {
 }
 
 .popular-title {
-    font-family: 'Sen';
+    font-family: var(--font-heading);
     font-style: normal;
     font-weight: 700;
     font-size: 3.8rem;
@@ -282,8 +277,6 @@ body {
 }
 
 .popular .desc {
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5F5B53;
@@ -320,8 +313,6 @@ body {
 }
 
 .popular .title-item {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -329,9 +320,6 @@ body {
 }
 
 .popular .desc-item {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #5F5B53;
@@ -348,8 +336,6 @@ body {
     position: relative;
     top: -2px;
     right: -1px;
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #FEA31B;
@@ -372,7 +358,7 @@ body {
 
 .comment .name {
     margin-top: 18px;
-    font-family: 'Sen';
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 1.42;
@@ -381,8 +367,6 @@ body {
 
 .comment .desc {
     margin-top: 4px;
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #BFBCB3;
@@ -414,7 +398,7 @@ body {
 }
 
 .comment .icon-dot.active {
-    background: #FFB900;
+    background: var(--primary);
 }
 
 .comment .row-cmt {
@@ -428,7 +412,6 @@ body {
 }
 
 .comment .msg {
-    font-family: 'Poppins';
     font-style: italic;
     font-weight: 400;
     font-size: 2.6rem;
@@ -494,7 +477,7 @@ body {
 }
 
 .feature .title {
-    font-family: 'Sen';
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
@@ -503,8 +486,6 @@ body {
 }
 
 .feature .desc, .feature .sub {
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
     color: #5F5B53;
@@ -513,7 +494,7 @@ body {
 
 .feature .btn-feature {
     min-width: 137px;
-    background: #FFB900;
+    background: var(--primary);
     border-radius: 26px;
     margin-top: 32px;
 }
@@ -531,7 +512,7 @@ body {
 }
 
 .blog .sub-title {
-    font-family: 'Sen';
+    font-family: var(--font-heading);
     font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
@@ -541,8 +522,6 @@ body {
 }
 
 .blog .desc {
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.75;
     text-align: center;
@@ -576,8 +555,6 @@ body {
 
 .blog .date {
     display: inline-block;
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #5F5B53;
@@ -589,13 +566,12 @@ body {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #FFB900;
+    background: var(--primary);
     margin-right: 5px;
     transform: translateY(-2px);
 }
 
 .blog .info {
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -627,7 +603,7 @@ body {
 }
 
 .blog .icon-dot.active {
-    background: #FFB900;
+    background: var(--primary);
 }
 
 .blog-slide {
@@ -675,8 +651,6 @@ body {
 }
 
 .footer .summary-content {
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #BFBCB2;
@@ -686,7 +660,6 @@ body {
 .footer .heading {
     display: inline-block;
     width: 130px;
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -697,8 +670,6 @@ body {
 }
 
 .footer .list .item, .footer .link {
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #BFBCB2;
@@ -709,14 +680,12 @@ body {
 }
 
 .footer .list strong {
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.4rem;
     color: #fff;
 }
 
 .footer .copyright {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
