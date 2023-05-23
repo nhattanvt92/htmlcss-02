@@ -4,8 +4,8 @@
 }
 
 :root {
-    --primary: #FFB900;
-    --font-heading: 'Sen', sans-serif;
+    --primary: #ffb900;
+    --font-heading: "Sen", sans-serif;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* common */
@@ -26,7 +26,7 @@ body {
     padding: 17px 15px;
     font-weight: 600;
     font-size: 1.6rem;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #171100;
     border-radius: 24.5px;
 }
@@ -44,7 +44,7 @@ body {
 
 /* =============== Header =============== */
 .header {
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .header.fixed {
@@ -72,7 +72,7 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .navbar ul li a:hover,
@@ -96,7 +96,7 @@ body {
 /* ============= Hero ============= */
 
 .hero {
-    background: #FFFCF4;
+    background: #fffcf4;
     padding: 56px 0 65px;
 }
 
@@ -114,31 +114,32 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+    vertical-align: bottom;
 }
 
 .content-summary {
-    display: flex;
     height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 24px 24px;
+    padding: 24px;
 }
 
 .hero .hero-summary {
     width: 270px;
     height: 244px;
     position: absolute;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     bottom: 48px;
     right: -100px;
 }
 
-
-.hero .item {
+.hero-summary .item {
     display: flex;
     align-items: center;
+}
+
+.hero-summary .item ~ .item {
+    margin-top: 14px;
 }
 
 .hero .item .info {
@@ -148,7 +149,7 @@ body {
 .info .sub-title {
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .info .course {
@@ -161,7 +162,7 @@ body {
 .hero .content-block {
     margin-left: auto;
     width: 40%;
-} 
+}
 .hero .title {
     font-family: var(--font-heading);
     font-style: normal;
@@ -170,12 +171,12 @@ body {
     line-height: 1.17;
     letter-spacing: -0.02em;
     color: #171100;
-} 
+}
 
 .hero .desc {
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5F5B53;
+    color: #5f5b53;
     margin-top: 22px;
     margin: 22px 0 38px;
 }
@@ -190,7 +191,7 @@ body {
     align-items: center;
     margin-left: 28px;
     border: none;
-    background: #FFFCF4;
+    background: #fffcf4;
     cursor: pointer;
 }
 
@@ -235,6 +236,11 @@ body {
 .hero .engagement span {
     display: flex;
     gap: 28px;
+    margin-top: 8px;
+}
+
+.hero .engagement .desc {
+    margin: 0;
 }
 
 .hero .engagement strong {
@@ -253,7 +259,7 @@ body {
     padding: 200px 0;
 }
 
-.popular .wrap {
+.popular .info {
     max-width: 458px;
 }
 
@@ -262,8 +268,10 @@ body {
     align-items: center;
 }
 
-.popular .icon {
+.popular .control {
     margin-left: auto;
+    display: flex;
+    gap: 18px;
 }
 
 .popular-title {
@@ -279,10 +287,28 @@ body {
 .popular .desc {
     font-size: 1.8rem;
     line-height: 1.67;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
-/* ============ list item ============= */
+.popular .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    color: var(--primary);
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+}
+
+.popular .control-btn:hover {
+    background: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ============ list item popular ============= */
 
 .popular .list {
     display: flex;
@@ -292,16 +318,22 @@ body {
 
 .popular .item {
     flex: 1;
-    background: #FFFFFF;
-    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    border: 1px solid #e2dfda;
     border-radius: 12px;
+    overflow: hidden;
+}
+
+.popular .item:hover {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-color: transparent;
 }
 
 .popular .thumb {
-    width: 100%;
+    width: calc(100% + 2px);
     height: 278px;
     object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
+    margin: -1px;
 }
 
 .popular .body {
@@ -322,15 +354,18 @@ body {
 .popular .desc-item {
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
     margin: 6px 0 12px;
 }
 
-.popular .btn {
+.popular .book-btn {
     margin-left: auto;
     min-width: 118px;
 }
 
+.popular .book-btn:hover {
+    background: var(--primary);
+}
 
 .popular .number-star {
     position: relative;
@@ -338,16 +373,15 @@ body {
     right: -1px;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #FEA31B;
+    color: #fea31b;
 }
 
 /* ========== comment ============= */
 
 .comment {
     padding: 96px 0;
-    background: #2E2100;
+    background: #2e2100;
 }
-
 
 .comment .avatar {
     width: 72px;
@@ -362,14 +396,14 @@ body {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 1.42;
-    color: #F7F7F7;
+    color: #f7f7f7;
 }
 
 .comment .desc {
     margin-top: 4px;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #BFBCB3;
+    color: #bfbcb3;
 }
 
 .icons {
@@ -386,7 +420,6 @@ body {
     border-radius: 50%;
     background: #634700;
 }
-
 
 .comment .icon-dot::before {
     position: relative;
@@ -416,7 +449,7 @@ body {
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 1.54;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .comment .icon-msg {
@@ -485,10 +518,11 @@ body {
     color: #171100;
 }
 
-.feature .desc, .feature .sub {
+.feature .desc,
+.feature .sub {
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #5F5B53;
+    color: #5f5b53;
     margin-top: 16px;
 }
 
@@ -503,7 +537,7 @@ body {
 
 .blog {
     padding: 96px 0;
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .blog .header {
@@ -537,7 +571,7 @@ body {
 
 .blog .item {
     max-width: 31.6%;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     overflow: hidden;
@@ -557,7 +591,7 @@ body {
     display: inline-block;
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #5F5B53;
+    color: #5f5b53;
 }
 
 .blog .date::before {
@@ -583,7 +617,7 @@ body {
     content: "";
     width: 160px;
     height: 1px;
-    background: #E2DFDA;
+    background: #e2dfda;
     border-radius: 0.5px;
     margin: 12px 0;
 }
@@ -617,13 +651,13 @@ body {
 
 .footer {
     padding: 96px 0 28px;
-    background: #2E2100;
+    background: #2e2100;
 }
 
 .footer .row {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #59554B;
+    border-bottom: 1px solid #59554b;
     padding-bottom: 38px;
     margin-bottom: 28px;
 }
@@ -653,7 +687,7 @@ body {
 .footer .summary-content {
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #BFBCB2;
+    color: #bfbcb2;
     margin-top: 18px;
 }
 
@@ -663,16 +697,17 @@ body {
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
-    color: #FFFFFF;
-    border-bottom: 1px solid #59554B;
+    color: #ffffff;
+    border-bottom: 1px solid #59554b;
     padding-bottom: 14px;
     margin-bottom: 14px;
 }
 
-.footer .list .item, .footer .link {
+.footer .list .item,
+.footer .link {
     font-size: 1.4rem;
     line-height: 1.86;
-    color: #BFBCB2;
+    color: #bfbcb2;
 }
 
 .footer .list .item ~ .item {
@@ -691,5 +726,5 @@ body {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    color: #807D74;
+    color: #807d74;
 }
