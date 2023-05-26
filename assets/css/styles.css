@@ -42,6 +42,13 @@ body {
     margin-right: auto;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* =============== Header =============== */
 .header {
     background: #fffcf4;
@@ -376,21 +383,21 @@ body {
     color: #fea31b;
 }
 
-/* ========== comment ============= */
+/* ========== Feedback ============= */
 
-.comment {
+.feedback {
     padding: 96px 0;
     background: #2e2100;
 }
 
-.comment .avatar {
+.feedback .avatar {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.comment .name {
+.feedback .name {
     margin-top: 18px;
     font-family: var(--font-heading);
     font-weight: 700;
@@ -399,21 +406,21 @@ body {
     color: #f7f7f7;
 }
 
-.comment .desc {
+.feedback .desc {
     margin-top: 4px;
     font-size: 1.4rem;
     line-height: 1.86;
     color: #bfbcb3;
 }
 
-.icons {
+.dots {
     margin-top: 28px;
     display: flex;
     gap: 6px;
     align-items: center;
 }
 
-.comment .icon-dot {
+.feedback .icon-dot {
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -421,7 +428,7 @@ body {
     background: #634700;
 }
 
-.comment .icon-dot::before {
+.feedback .icon-dot::before {
     position: relative;
     content: "";
     display: inline-block;
@@ -430,32 +437,28 @@ body {
     top: -4px;
 }
 
-.comment .icon-dot.active {
+.feedback .icon-dot.active {
     background: var(--primary);
+    cursor: default;
 }
 
-.comment .row-cmt {
+.feedback .feedback-item {
     display: flex;
     justify-content: space-between;
 }
 
-.comment .wrap-msg {
+.feedback .content {
     width: 67%;
     position: relative;
 }
 
-.comment .msg {
+.feedback .msg {
+    margin-left: 30px;
     font-style: italic;
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
-}
-
-.comment .icon-msg {
-    position: absolute;
-    left: -30px;
-    top: -26px;
 }
 
 /* ========= feature ============ */
