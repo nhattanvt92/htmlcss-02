@@ -390,6 +390,18 @@ body {
     background: #2e2100;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-item {
+    justify-content: space-between;
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+
 .feedback .avatar {
     width: 72px;
     height: 72px;
@@ -440,11 +452,6 @@ body {
 .feedback .icon-dot.active {
     background: var(--primary);
     cursor: default;
-}
-
-.feedback .feedback-item {
-    display: flex;
-    justify-content: space-between;
 }
 
 .feedback .content {
