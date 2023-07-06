@@ -579,12 +579,15 @@ body {
 
 .blog .list {
     display: flex;
+    gap: 30px;
     justify-content: space-between;
     margin-top: 55px;
+    overflow: hidden;
 }
 
 .blog .item {
-    max-width: 31.6%;
+    flex-shrink: 0;
+    width: calc(33.3% - 20px);
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
@@ -651,7 +654,6 @@ body {
 }
 
 .blog .icon-dot {
-    display: inline-block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
@@ -660,6 +662,7 @@ body {
 
 .blog .icon-dot.active {
     background: var(--primary);
+    cursor: default;
 }
 
 .blog-slide {
