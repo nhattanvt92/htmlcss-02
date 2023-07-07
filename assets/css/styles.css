@@ -554,6 +554,10 @@ body {
     background: #fffcf4;
 }
 
+.blog .main-content {
+    overflow: hidden;
+}
+
 .blog .header {
     margin: 0 auto;
     max-width: 448px;
@@ -582,7 +586,6 @@ body {
     gap: 30px;
     justify-content: space-between;
     margin-top: 55px;
-    overflow: hidden;
 }
 
 .blog .item {
@@ -591,7 +594,12 @@ body {
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
+    /* display: none; */
 }
+/* 
+.blog .item:nth-child(-n + 3) {
+    display: block;
+} */
 
 .blog .item:hover {
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
@@ -718,7 +726,7 @@ body {
 
 .footer .heading {
     display: inline-block;
-    width: 130px;
+    padding-right: 28px;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
